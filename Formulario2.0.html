@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            background-color: rgb(105, 125, 168);
+            color: white;
+            text-align: center;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-color: white;
+            border-width: 5px;
+        }
+
+        h1 {
+            background-color: rgb(84, 97, 158);
+            color: rgb(255, 255, 255);
+            border-radius: 100px;
+            width: 300px;
+            border-color: white;
+            border-width: 5px;
+        }
+
+        form {
+            border-color: white;
+            border: 100px;
+            background-color: rgb(125, 151, 185);
+            border-radius: 50px;
+            flex: content;
+            text-align: center;
+            width: 400px;
+        }
+
+        input {
+            border-radius: 20px;
+            background-color: rgb(52, 126, 179);
+            color: white;
+            border-color: white;
+            border-width: 3px;
+        }
+
+        select {
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(52, 126, 179);
+            font-size: 15px;
+            border-color: white;
+            border-width: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>Formulário</h1>
+        <hr>
+        <form action="html.py" method="post">
+            <br>
+            <h2>
+                Preencha os campos a seguir:
+            </h2>
+            <br>
+
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required> <br>
+            <p></p>
+            <label for="password">Senha: </label>
+            <input type="password" id="password" name="password" required> <br>
+            <p></p>
+            <label for="course">Escolha seu curso:</label> <br>
+            <p></p>
+            <label for="ads">ADS</label>
+            <input type="radio" name="course" id="ads" value="ADS"> <br>
+            <p></p>
+            <label for="cc">CC</label>
+            <input type="radio" name="course" id="cc" value="CC"> <br>
+            <p></p>
+            <label for="si">SI</label>
+            <input type="radio" name="course" id="si" value="SI"> <br>
+            <p></p>
+            <label for="turno">Escolha seus turnos - </label>
+            <select name="turno" id="turno" required>
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="noturno">Noturno</option>
+            </select>
+            <p></p>
+            <input type="submit" value="Enviar">
+            <br>
+            <br>
+        </form>
+    </center>
+
+    <script>
+        window.alert(`Novo formulário!!`)
+    </script>
+
+</body>
+
+</html>
